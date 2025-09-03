@@ -31,6 +31,6 @@ module.exports = {
       })
         .then((response) => response.json())
         .then((json) => console.log(json))
-		.then((json) => console.log(status));
+		.then((json) => console.log(json.status));
       	},
 };
