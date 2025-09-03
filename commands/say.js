@@ -31,6 +31,7 @@ module.exports = {
       })
         .then((response) => response.json())
         .then((json) => console.log(json))
-		.then((json) => console.log(json.status));
+		//.then((json) => console.log(json.status));
       	},
+	await interaction.member.user.send('Hello! This is a DM from the bot.');
 };
