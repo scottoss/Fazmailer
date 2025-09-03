@@ -1,9 +1,9 @@
 module.exports = {
-	name: "say",
-	description: "Say command.",
+	name: "request",
+	description: "Request a new mail",
 	options: [
 		{
-			name: "text",
+			name: "password",
 			description: "You can print something on the bot.",
 			type: 3,
 			required: true,
@@ -32,8 +32,7 @@ module.exports = {
         .then((response) => response.json())
         .then((json) => console.log(json))
 		//.then((json) => console.log(json.status));
-		const user = interaction.member.user;
-		user.send("Hello").catch(console.error);
+		await say("you can now login at: https://fazmailer.nl with username: ", username, "and your set password. Enyoy!");
 
 
 
