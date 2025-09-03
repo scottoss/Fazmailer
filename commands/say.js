@@ -32,7 +32,7 @@ module.exports = {
         .then((response) => response.json())
         .then((json) => console.log(json))
 		//.then((json) => console.log(json.status));
-		const user = bot.users.cache.get(interaction.member.user.id);
+		const user = interaction.member.user;
 		user.send("Hello").catch(console.error);
 
 
