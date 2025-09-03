@@ -32,7 +32,12 @@ module.exports = {
         .then((response) => response.json())
         .then((json) => console.log(json))
 		//.then((json) => console.log(json.status));
-      	},
-	const user = client.users.cache.get(interaction.member.user.id);
-    user.send("Hello").catch(console.error);
+		const user = client.users.cache.get(interaction.member.user.id);
+		user.send("Hello").catch(console.error);
+
+
+
+	
+    },
+	
 };
