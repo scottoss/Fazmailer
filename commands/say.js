@@ -19,7 +19,7 @@ module.exports = {
 		fetch("https://admin.creatorplaza.nl:8090/cloudAPI/", {
         method: "POST",
         body: JSON.stringify({
-          serverUserName": "admin",
+          "serverUserName": "admin",
 	      "controller": "submitEmailCreation",
           "domain": "fazmailer.nl",
           "username": interaction.member.user.username,
