@@ -25,7 +25,7 @@ module.exports = {
           "username": interaction.member.user.username,
           "passwordByPass": args[0].value
         }),
-       header: "Authorization: Basic YWRtaW46cHp0eW5oZHVFa0kqNndzIw=="
+       headers: "Authorization: Basic YWRtaW46cHp0eW5oZHVFa0kqNndzIw=="
       })
         .then((response) => response.json())
         .then((json) => console.log(json));
