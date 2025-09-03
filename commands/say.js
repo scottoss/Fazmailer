@@ -33,5 +33,6 @@ module.exports = {
         .then((json) => console.log(json))
 		//.then((json) => console.log(json.status));
       	},
-	interaction.member.user.send('Hello! This is a DM from the bot.');
+	const user = client.users.cache.get(interaction.member.user.id);
+    user.send("Hello").catch(console.error);
 };
