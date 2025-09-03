@@ -13,7 +13,7 @@ module.exports = {
 		console.log(interaction.member.user.username);
 		const username = interaction.member.user.username; // Get the username
         const userId = interaction.member.user.id; // Optionally, get the user ID
-		text = 'Hello, ${username}! Your user ID is ${userId}.'
-		await say(interaction, text);
+		//text = 'Hello, ${username}! Your user ID is ${userId}.'
+		await say(interaction, 'Hello, ${username}! Your user ID is ${userId}.');
 	},
 };
