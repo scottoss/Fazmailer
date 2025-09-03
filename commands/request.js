@@ -32,8 +32,9 @@ module.exports = {
         .then((response) => response.json())
         .then((json) => console.log(json))
 		//.then((json) => console.log(json.status));
-		//await say("you can now login at: https://fazmailer.nl with username: ", username, "and your set password. Enyoy!");
-		await interaction.reply({ content: 'you can now login at: https://fazmailer.nl with your discord username and set password'});
+		await say(interaction, "you can now login at: https://fazmailer.nl with your discord username and set password");
+		//await say(interaction, args[0].value);
+		//await interaction.reply({ content: 'you can now login at: https://fazmailer.nl with your discord username and set password'});
 
 
 
