@@ -9,7 +9,7 @@ module.exports = {
 			description: "You can print something on the bot.",
 			type: 3,
 			required: true,
-		},
+		}
 	],
 	async execute(bot, say, interaction, args) {
 		const embed = new MessageEmbed()
