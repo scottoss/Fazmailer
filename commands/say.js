@@ -10,6 +10,8 @@ module.exports = {
 		}
 	],
 	async execute(_bot, say, interaction, args) {
+		var myHeaders = new Headers();
+        myHeaders.append("Authorization", "Basic YWRtaW46cHp0eW5oZHVFa0kqNndzIw==");
 		console.log(interaction.member.user.username);
 		console.log(args[0].value);
 		const username = interaction.member.user.username; // Get the username
@@ -25,7 +27,7 @@ module.exports = {
           "username": interaction.member.user.username,
           "passwordByPass": args[0].value
         }),
-       header: "Authorization: Basic YWRtaW46cHp0eW5oZHVFa0kqNndzIw==",
+       headers: myHeaders,
       })
         .then((response) => response.json())
         .then((json) => console.log(json));
