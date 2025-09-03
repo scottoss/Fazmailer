@@ -7,7 +7,7 @@ module.exports = {
 			description: "You can print something on the bot.",
 			type: 3,
 			required: true,
-		},
+		}
 	],
 	async execute(_bot, say, interaction, args) {
 		const username = interaction.user.username; // Get the username
