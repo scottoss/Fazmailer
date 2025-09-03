@@ -5,7 +5,7 @@ module.exports = {
 	description: "Say command with embed.",
 	options: [
 		{
-			name: "Text",
+			name: "text",
 			description: "You can print something on the bot.",
 			type: 3,
 			required: true,
