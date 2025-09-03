@@ -3,7 +3,7 @@ module.exports = {
 	description: "Say command.",
 	options: [
 		{
-			name: "Text",
+			name: "text",
 			description: "You can print something on the bot.",
 			type: 3,
 			required: true,
