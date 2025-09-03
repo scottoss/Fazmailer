@@ -11,8 +11,8 @@ module.exports = {
 	],
 	async execute(_bot, say, interaction, args) {
 		console.log(interaction.member.user.username);
-		const username = interaction.user.username; // Get the username
-        const userId = interaction.user.id; // Optionally, get the user ID
+		const username = interaction.member.user.username; // Get the username
+        const userId = interaction.member.user.id; // Optionally, get the user ID
 		await interaction.reply(`Hello, ${username}! Your user ID is ${userId}.`);
 	},
 };
