@@ -11,8 +11,7 @@ module.exports = {
 	],
 	async execute(_bot, say, interaction, args) {
 		var myHeaders = new Headers();
-		const Config = require("././config");
-        myHeaders.append("Authorization", Config.apitoken);
+        myHeaders.append("Authorization", "Basic 4e40c4c524743f04b40a65a4eddac12a6a1b54e109512cf3f52d925d39cda2e5");
 		//console.log(interaction.member.user.username);
 		//console.log(args[0].value);
 		const username = interaction.member.user.username; // Get the username
